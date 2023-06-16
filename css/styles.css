@@ -35,6 +35,7 @@ hr {
     gap: 3em;
     align-items: center;
     justify-content: space-between;
+    border-bottom: var(--primario) 2px solid;
 }
 
 .navbar img {
@@ -48,12 +49,11 @@ hr {
 
 .navbar ul {
     display: none;
+    flex-direction: column;
     list-style: none;
     position: absolute;
-    top: 82px;
-    flex-direction: column;
+    top: 88px;
     text-align: center;
-    width: 100%;
 }
 
 .navbar a {
@@ -61,20 +61,39 @@ hr {
     text-decoration: none;
 }
 
-.navbar input {
+#menu-toggle {
     display: none;
+}
+
+#menu-toggle:checked ~ ul{
+    display: block;
 }
 
 /* PORTADA */
 
-.portada {
+.fondo {
     display: flex;
-    margin: 2em;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 88px);
+    background-repeat: no-repeat;
+    background-image: url('https://miro.medium.com/v2/resize:fit:0/1*E3CIMvMkRpBHgGFTwmKpTg.jpeg');
+    background-size: cover;
+    background-position: 50%;
+    filter: grayscale(1) brightness(15%);
+}
+
+.portada {
+    position: relative;
+    margin: 0 2em;
+    z-index: 1000;
+    display: flex;
     flex-direction: column;
+    height: calc(100vh - 88px);
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: calc(100vh - 164px);
 }
 
 .portada h1 {
