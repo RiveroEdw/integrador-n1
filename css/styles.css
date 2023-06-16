@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    background-color: #303030;
+    color: #fff;
+}
+
+:root {
+    --primario: #f77f00;
+    --claro: #38b000;
+    --oscuro: #007200;
+}
+
+h2 {
+    color: var(--primario);
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+}
+
+hr {
+    border-color: var(--primario);
+    margin-top: 2em;
+    max-width: 320px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar {
+    background-color: #303030;
+    display: flex;
+    padding: 1em;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar i {
+    color: var(--primario);
+    font-size: 2em;
+}
+
+.navbar ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 82px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: var(--primario);
+    text-decoration: none;
+}
+
+.navbar input {
+    display: none;
+}
+
+/* PORTADA */
+
+.portada {
+    display: flex;
+    margin: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: calc(100vh - 164px);
+}
+
+.portada h1 {
+    color: var(--primario);
+    margin-top: 0;
+}
+
+.portada p {
+    color: #fff;
+    margin: 0;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.nosotros div {
+    width: 80%;
+    border: var(--primario) 3px solid;
+    padding: 1em;
+    margin: 1em 2em;
+    border-radius: 20px;
+}
+
+.nosotros p {
+    margin-top: 1em;
+}
+
+.nosotros i {
+    color: var(--primario);
+    font-size: 2em;
+    padding: .2em;
+    border: var(--primario) 2px solid;
+    border-radius: 100%;
+}
+
+/* COLECCIONES */
+
+.colecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.colecciones img{
+    width: 8.7em;
+    height: 8.7em;
+    object-fit: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 0 2px var(--primario);
+}
+
+.colecciones article {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.colecciones h3 {
+    color: var(--primario);
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* CONTACTO */
+
+.contacto {
+    align-items: center;
+}
+
+.contacto form {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input, textarea{
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 10px;
+}
+
+.contacto input {
+    height: 1.5em;
+}
+
+.contacto label {
+    margin: 5px;
+    font-size: .8em;
+    color: var(--primario);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primario);
+    color: #303030;
+}
+
+.footer p, h4 {
+    font-size: .8em;
+}
+
+.footer i {
+    font-size: 2em;
+    margin: .3em;
+}
+
+/* LOGIN */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 172px);
+    align-items: center;
+    justify-content: center;
+}
+
+.login div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login label {
+    color: var(--primario);
+}
+
+.login input {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 10px;
+    height: 1.5em;
+    width: 20em;
+}
+
+.login label {
+    margin: 1em 0 .5em 0;
+    color: var(--primario);
+}
+
+.login button {
+    margin: 1.5em;
+    background-color: var(--primario);
+    border: none;
+    border-radius: 10px;
+    padding: .8em;
+    font-family: 'Geologica', sans-serif;
+    color: #303030;
+}
+
+.login p {
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--primario);
+}
