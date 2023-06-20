@@ -26,13 +26,14 @@ hr {
     max-width: 320px;
 }
 
+
 /* BARRA DE NAVEGACIÓN */
+
 
 .navbar {
     background-color: #303030;
     display: flex;
     padding: 1em;
-    gap: 3em;
     align-items: center;
     justify-content: space-between;
     border-bottom: var(--primario) 2px solid;
@@ -54,6 +55,7 @@ hr {
     position: absolute;
     top: 88px;
     text-align: center;
+    z-index: 99;
 }
 
 .navbar a {
@@ -69,10 +71,12 @@ hr {
     display: block;
 }
 
+
 /* PORTADA */
 
+
 .fondo {
-    display: none;
+    display: flex;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -104,9 +108,12 @@ hr {
 .portada p {
     color: #fff;
     margin: 0;
+    max-width: 508px;
 }
 
+
 /* NOSOTROS */
+
 
 .nosotros {
     display: flex;
@@ -119,8 +126,8 @@ hr {
     width: 80%;
     border: var(--primario) 3px solid;
     padding: 1em;
-    margin: 1em 2em;
     border-radius: 20px;
+    margin: 1em;
 }
 
 .nosotros p {
@@ -135,7 +142,9 @@ hr {
     border-radius: 100%;
 }
 
+
 /* COLECCIONES */
+
 
 .colecciones {
     display: flex;
@@ -171,20 +180,25 @@ hr {
     margin: 10px 0;
 }
 
+
 /* CONTACTO */
 
-.contacto {
-    align-items: center;
-}
 
-.contacto form {
-    margin: 2em;
+.contacto {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
+.contacto form {
+    margin: 0 0 2em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+}
+
 .contacto div {
-    margin: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -193,6 +207,7 @@ hr {
     background-color: #eeeeee;
     border: none;
     border-radius: 10px;
+    margin: 5px;
 }
 
 .contacto input {
@@ -205,7 +220,13 @@ hr {
     color: var(--primario);
 }
 
+.contacto article {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FOOTER */
+
 
 .footer {
     display: flex;
@@ -213,6 +234,7 @@ hr {
     align-items: center;
     background-color: var(--primario);
     color: #303030;
+    padding: 2em;
 }
 
 .footer p, h4 {
@@ -224,7 +246,9 @@ hr {
     margin: .3em;
 }
 
+
 /* LOGIN */
+
 
 .login {
     display: flex;

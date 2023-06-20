@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./assets/logo.png">
@@ -42,16 +43,18 @@
     <section class="nosotros">
         <h2>Sobre Nosotros</h2>
         <div>
-            <i class='bx bxs-user'></i>
-            <p>Contamos con años de experiencia en el mundo de la impresión 3D, sabemos lo que hacemos. Hemos trabajado en una gran variedad de proyectos y adquirido conocimientos sólidos en el campo.</p>
-        </div>
-        <div>
-            <i class='bx bxs-check-circle'></i>
-            <p>Nos comprometemos en darte soluciones de alta calidad y precisión. Utilizamos la mejor tecnología y materiales de primera para producir piezas detalladas con un acabado profesional.</p>
-        </div>
-        <div>
-            <i class='bx bxs-star'></i>
-            <p>Nos importa mucho el trato que damos a nuestros clientes. Nos aseguramos de entender tus necesidades y trabajamos de cerca contigo para encontrar la mejor solución. Te brindaremos consejos y recomendaciones de expertos en el rubro para que tengas la experiencia personalizada que te mereces.</p>
+            <article>
+                <i class='bx bxs-user'></i>
+                <p>Contamos con años de experiencia en el mundo de la impresión 3D, sabemos lo que hacemos. Hemos trabajado en una gran variedad de proyectos y adquirido conocimientos sólidos en el campo.</p>
+            </article>
+            <article>
+                <i class='bx bxs-check-circle'></i>
+                <p>Nos comprometemos en darte soluciones de alta calidad y precisión. Utilizamos la mejor tecnología y materiales de primera para producir piezas detalladas con un acabado profesional.</p>
+            </article>
+            <article>
+                <i class='bx bxs-star'></i>
+                <p>Nos importa mucho el trato que damos a nuestros clientes. Nos aseguramos de entender tus necesidades y trabajamos de cerca contigo para encontrar la mejor solución. Te brindaremos consejos y recomendaciones de expertos en el rubro para que tengas la experiencia personalizada que te mereces.</p>
+            </article>
         </div>
     </section>
 
@@ -93,25 +96,27 @@
         <h2>Contacto</h2>
         <form>
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
+                <article>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                </article>
+                <article>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido">
+                </article>
             </div>
             <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido">
+                <article>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </article>
+                <article>
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero">
+                </article>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-            </div>
-            <div>
-                <label for="numero">Número:</label>
-                <input type="number" id="numero">
-            </div>
-            <div>
                 <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            </div>
         </form>
     </section>
 
