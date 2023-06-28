@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Mated | Impresiones 3D</title>
 </head>
 <body>
@@ -16,33 +18,33 @@
     <header>
         <nav class="navbar">
             <a href="index.html"><img src="./assets/logo.png"></a>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Colecciones</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
-                <li><a href="register.html">Registrarse</a></li>
-            </ul>
             <label for="menu-toggle">
                 <i class='bx bx-menu'></i>
             </label>
             <input type="checkbox" id="menu-toggle">
+            <ul class="menu-navigation">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#colecciones">Colecciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <div class="fondo"></div>
         <div class="portada">
-            <h1>3D <span>Mated</span></h1>
-            <p>Somos un equipo apasionado por la tecnología y la creatividad. Transformamos ideas en objetos tangibles mediante la impresión tridimensional. Ofrecemos soluciones personalizadas para prototipos, diseño de productos y artículos únicos.</p>
+            <h1 class="animate__animated animate__bounceIn">3D Mated</h1>
+            <p class="animate__animated animate__fadeInUp">Somos un equipo apasionado por la tecnología y la creatividad. Transformamos ideas en objetos tangibles mediante la impresión tridimensional. Ofrecemos soluciones personalizadas para prototipos, diseño de productos y artículos únicos.</p>
         </div>
+        <hr>
     </main>
 
-    <hr>
-
-    <section class="nosotros">
+    <section id="nosotros" class="nosotros">
         <h2>Sobre Nosotros</h2>
-        <div>
+        <div class="nosotros-container">
             <article>
                 <i class='bx bxs-user'></i>
                 <p>Contamos con años de experiencia en el mundo de la impresión 3D, sabemos lo que hacemos. Hemos trabajado en una gran variedad de proyectos y adquirido conocimientos sólidos en el campo.</p>
@@ -53,14 +55,14 @@
             </article>
             <article>
                 <i class='bx bxs-star'></i>
-                <p>Nos importa mucho el trato que damos a nuestros clientes. Nos aseguramos de entender tus necesidades y trabajamos de cerca contigo para encontrar la mejor solución. Te brindaremos consejos y recomendaciones de expertos en el rubro para que tengas la experiencia personalizada que te mereces.</p>
+                <p>Nos importa mucho el trato que damos a nuestros clientes. Nos aseguramos de entender tus necesidades y trabajamos de cerca contigo para darte la mejor solución.</p>
             </article>
         </div>
     </section>
 
-    <hr>
+    <div class="triangulo-bottom"></div>
 
-    <section class="colecciones">
+    <section id="colecciones" class="colecciones">
         <h2>Colecciones</h2>
         <div class="container">
             <article>
@@ -90,9 +92,10 @@
         </div>
     </section>
 
-    <hr>
+    <div class="triangulo-top"></div>
 
-    <section class="contacto">
+
+    <section id="contacto" class="contacto">
         <h2>Contacto</h2>
         <form>
             <div>
@@ -119,6 +122,8 @@
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
         </form>
     </section>
+
+    <div class="triangulo-bottom"></div>
 
     <footer class="footer">
         <div>

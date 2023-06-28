@@ -7,25 +7,47 @@ body {
     color: #fff;
 }
 
+* {
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
 :root {
     --primario: #f77f00;
     --claro: #38b000;
     --oscuro: #007200;
 }
 
+h1 {
+    font-size: 3em;
+}
+
 h2 {
     color: var(--primario);
     text-align: center;
-    font-size: 2em;
-    margin: 1em;
+    font-size: 3em;
 }
 
 hr {
     border-color: var(--primario);
-    margin-top: 2em;
-    max-width: 320px;
+    background-color: var(--primario);
+    height: 1px;
+    margin: 0;
 }
 
+.triangulo-top {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid var(--primario);
+    border-bottom: 3em solid transparent;
+}
+
+.triangulo-bottom {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid var(--primario);
+    border-top: 3em solid transparent;
+}
 
 /* BARRA DE NAVEGACIÓN */
 
@@ -48,27 +70,34 @@ hr {
     font-size: 2em;
 }
 
-.navbar ul {
+.menu-navigation {
     display: none;
     flex-direction: column;
-    list-style: none;
     position: absolute;
     top: 88px;
     text-align: center;
-    z-index: 99;
+    z-index: 1000;
+    background-color: #303030;
+    margin: 0;
+    padding: 2em;
+    gap: 1em;
+    border: var(--primario) 2px solid;
+    border-top: none;
+    right: 0;
 }
 
 .navbar a {
     color: var(--primario);
     text-decoration: none;
+    position: relative;
 }
 
 #menu-toggle {
     display: none;
 }
 
-#menu-toggle:checked ~ ul{
-    display: block;
+#menu-toggle:checked ~ .menu-navigation{
+    display: flex;
 }
 
 
@@ -78,9 +107,9 @@ hr {
 .fondo {
     display: flex;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
-    height: calc(100vh - 88px);
+    min-height: calc(100vh - 88px);
     background-repeat: no-repeat;
     background-image: url('https://miro.medium.com/v2/resize:fit:0/1*E3CIMvMkRpBHgGFTwmKpTg.jpeg');
     background-size: cover;
@@ -91,7 +120,7 @@ hr {
 .portada {
     position: relative;
     margin: 0 2em;
-    z-index: 1000;
+    z-index: 500;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 88px);
@@ -107,6 +136,7 @@ hr {
 
 .portada p {
     color: #fff;
+    font-size: 1.1em;
     margin: 0;
     max-width: 508px;
 }
@@ -120,6 +150,8 @@ hr {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .nosotros div {
@@ -150,6 +182,8 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--primario);
 }
 
 .container {
@@ -165,17 +199,22 @@ hr {
     height: 8.7em;
     object-fit: cover;
     border-radius: 1em;
-    box-shadow: 0 0 0 2px var(--primario);
+    box-shadow: 0 0 0 2px #303030;
 }
 
 .colecciones article {
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.colecciones h2 {
+    color: #303030;
 }
 
 .colecciones h3 {
-    color: var(--primario);
+    color: #303030;
     text-align: center;
     margin: 10px 0;
 }
@@ -186,8 +225,10 @@ hr {
 
 .contacto {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 96px);
 }
 
 .contacto form {
@@ -244,6 +285,7 @@ hr {
 .footer i {
     font-size: 2em;
     margin: .3em;
+    cursor: pointer;
 }
 
 
@@ -253,9 +295,10 @@ hr {
 .login {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 172px);
+    height: calc(100vh - 88px);
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
 .login div{

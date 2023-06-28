@@ -13,3 +13,48 @@
     }
 
 }
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 850px;
+        justify-content: space-around;
+    }
+
+    .colecciones article {
+        margin: 2em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .nosotros div {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nosotros article {
+        width: 230px;
+        margin: 1em;
+        border: var(--primario) 3px solid;
+        border-radius: 20px;
+        padding: 1em;
+    }
+
+    .navbar label {
+        display: none;
+    }
+    
+    .menu-navigation {
+        display: flex;
+        border: none;
+        top: 0;
+        flex-direction: row;
+        gap: 5em;
+        background-color: transparent;
+    }
+
+}
