@@ -252,7 +252,7 @@ hr {
 }
 
 .contacto input {
-    height: 1.5em;
+    height: 2em;
 }
 
 .contacto label {
@@ -265,6 +265,17 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
+.contacto button {
+    background-color: var(--primario);
+    border: none;
+    font-family: 'Geologica', sans-serif;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 /* FOOTER */
 
